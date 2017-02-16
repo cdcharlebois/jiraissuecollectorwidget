@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="JIRAIssueCollector.widget.JIRAIssueCollector" needsEntityContext="false" xmlns="http://www.mendix.com/widget/1.0/">
+    <name>JIRAIssueCollector</name>
+    <description>The JIRA issue collector widget.</description><icon>iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABG2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS41LjAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIi8+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+Gkqr6gAAAYNpQ0NQc1JHQiBJRUM2MTk2Ni0yLjEAACiRdZE7SwNBFEZPomLwQQQtLCyCqFUUoyDaWCT4ArWIEXw1yWY3EfJYdjdIsBVsBQXRxlehv0BbwVoQFEUQwc5a0UZlvesKEUlmmHsP38y9zHwD3lhGyZrVvZDNWUZ0LByYm18I1D7hxS+zB19cMfWpmdEYFcf7LR4nX3c7vSqfKzvqk6qpgMcnPKzohiU8Ljy5YukObwm3KOl4UvhEOGjIBYVvHD3h8rPDKZc/HTZi0Qh4m4QDqT+c+MNK2sgKy8vpyGYKyu99nJc0qLnZGcntstowiTJGmAATjBBhgBBDEgfopk8cCol35et7f+qnyUutIlGniMEyKdJYBEUtSHdVsia6KjND0fH/v6+m1t/ndm8IQ82jbb92Qu0mfG3Y9seBbX8dQtUDnOdK9fl9GHwTfaOkdeyBfw1OL0paYhvO1qH1Xo8b8R+pSpZX0+DlGBrnofkK6hZdz373ObqD2Kp81SXs7EKXnPcvfQNGLGfX/J/WVwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAlBJREFUOI2lUEtIVGEY/f77mIczMS91pMnJFCfFyI0ZJuaiReAiqKaCHkQiRYIVtDCaNhlUZNFCMZCMXNgismjSRS8Ios2YCKE9fGTWDKUjzvPOffz//W+rkeE60qKz+r7D+Q7nOyysg/2dA1XU0/Bs+27/+I+Po4vr6djcpfls33HWu6vX17BvSlZpZSItHyl0WEPeuhZkLG8armk+8HNhbHQ+94bLXWKpDG8wcG5BxFytb+NzldBZUVS+UoBKBOCKpzK8PgHKDv4rQxWf5yLR0kK7+LLnNNYLG8/08Im0ZN5aWoyGb55MrEkwNRseVLDq+hNPjbR3Pwl8W1huUwhx8hw77bAWvJj+Fe3MyPjw5PfftwHgQfaOWR0QeqMQtSopSG1jXyJNRFVLw0uJa4KklESTmW2CJHdgrFZzHLOUtwObxTQiKuQUJqo3mRavegrdRwHBionnQjPh5V5MqJNlmFiR3TqRa7CaoMztnLBZjF0MQiAquHEmHA2WuR3zkWiyBxNazzJILve4zr/ra4/kLTGLCv+NC5iotzRNW20cIaTwDLo09zRwV69n9ETNFvf9Eqe1HwC0LOeyFTzcU+cb1GvzGgS7W9PFDstFT7H9UZbDmBj6Lx9ayWfA6onaE3fqo7H0Y8cGcwAT6sRErVYI9W7e0TK++OnVvF6/JoGskHOChHcux4Uhl93cxSAUplRzihI++M8XBoIhI6X0GACA2cQH39/rmLRZzK8BACGE9uYz4HS7UcKkFQCgYlPR2xAAyARfBw0+GHhWzWfw3/gLhPT2+cJ3l5UAAAAASUVORK5CYII=</icon>
+    <properties>
+        <property key="urlString" type="string" required="true" defaultValue="">
+            <caption>URL</caption>
+            <category>Configuration</category>
+            <description>The url from the JIRA issue collector.</description>
+        </property>
+    </properties>
+</widget>
+
