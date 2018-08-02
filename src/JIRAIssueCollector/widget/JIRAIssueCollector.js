@@ -28,7 +28,7 @@ define([
     var $ = jQuery = _jQuery.noConflict(true);
 
     // Declare widget's prototype.
-    return declare("JIRAIssueCollector.widget.JIRAIssueCollector", [ _WidgetBase, _TemplatedMixin ], {
+    return declare("JIRAIssueCollector.widget.JIRAIssueCollector", [_WidgetBase, _TemplatedMixin], {
         // _TemplatedMixin will create our dom node using this HTML template.
         templateString: widgetTemplate,
 
@@ -52,7 +52,7 @@ define([
             logger.debug(this.id + ".postCreate");
 
             if (this.readOnly || this.get("disabled") || this.readonly) {
-              this._readOnly = true;
+                this._readOnly = true;
             }
 
             this._updateRendering();
@@ -68,46 +68,46 @@ define([
 
         // mxui.widget._WidgetBase.enable is called when the widget should enable editing. Implement to enable editing if widget is input widget.
         enable: function () {
-          logger.debug(this.id + ".enable");
+            logger.debug(this.id + ".enable");
         },
 
         // mxui.widget._WidgetBase.enable is called when the widget should disable editing. Implement to disable editing if widget is input widget.
         disable: function () {
-          logger.debug(this.id + ".disable");
+            logger.debug(this.id + ".disable");
         },
 
         // mxui.widget._WidgetBase.resize is called when the page's layout is recalculated. Implement to do sizing calculations. Prefer using CSS instead.
         resize: function (box) {
-          logger.debug(this.id + ".resize");
+            logger.debug(this.id + ".resize");
         },
 
         // mxui.widget._WidgetBase.uninitialize is called when the widget is destroyed. Implement to do special tear-down work.
         uninitialize: function () {
-          logger.debug(this.id + ".uninitialize");
+            logger.debug(this.id + ".uninitialize");
             // Clean up listeners, helper objects, etc. There is no need to remove listeners added with this.connect / this.subscribe / this.own.
         },
 
         // Rerender the interface.
         _updateRendering: function (callback) {
             logger.debug(this.id + "._updateRendering");
-            
+
             // Only add the scripts to the page once!
             if (typeof window.jiraissuecollector !== "undefined") {
             } else {
                 window.jiraissuecollector = '-isset-';
                 // Requires jQuery!
                 $.ajax({
-                   url: this.urlString,
-                   type: "get",
-                   cache: true,
-                   dataType: "script"
+                    url: this.urlString,
+                    type: "get",
+                    cache: true,
+                    dataType: "script"
                 });
             }
 
             // The callback, coming from update, needs to be executed, to let the page know it finished rendering
             this._executeCallback(callback, "_updateRendering");
         },
-        
+
         _executeCallback: function (cb, from) {
             logger.debug(this.id + "._executeCallback" + (from ? " from " + from : ""));
             if (cb && typeof cb === "function") {
